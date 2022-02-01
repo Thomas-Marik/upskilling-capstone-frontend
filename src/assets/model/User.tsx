@@ -1,0 +1,30 @@
+interface IUser{
+    userName:string;
+    userPass:string;
+    role:string;
+    bio:{
+        firstname:string;
+        lastname:string;
+        email:string;
+        dob:string;
+        address:{
+            street:string;
+            city:string;
+            state:string;
+            areaCode:string;
+                 };
+        };
+    account:[
+         {
+        accountId:number;
+        accountType:string;
+        accountBalance:number;
+        transactions:[{
+            transactionId:number;
+            transactionType:string;
+            transactionAmount:number;
+            transactionDate:string;
+        }]
+    }];
+}
+export default IUser;
