@@ -12,11 +12,11 @@
   justify-items: center;
   justify-content: center;
   align-content: center;
- 
+ background-color: aqua;
 }
 .content {
   flex:1;
   overflow: auto;
- 
+ background-color: brown;
 
 }

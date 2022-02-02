@@ -2,12 +2,10 @@ import React from 'react';
 
 
 const links=[
-    {id:1,name:"Home",path:"/",icon:home},
-    {id:2,name:"Education",path:"/education",icon:school},
-    {id:3,name:"Experience",path:"/work",icon:work},
-    {id:4,name:"Projects",path:"/projects",icon:projects},
-    {id:5,name:"Skills",path:"/skills",icon:skills},
-    {id:6,name:"Contact",path:"/contact",icon:contacts},
+    {id:1,name:"Home",path:"/",icon:"accounts"},
+    {id:2,name:"Education",path:"/education",icon:"bio"},
+    {id:3,name:"Experience",path:"/work",icon:"edit"},
+    {id:4,name:"Projects",path:"/projects",icon:"transfer"},
 ]
 
 
@@ -19,7 +17,7 @@ function CustomerNav(props) {
             {links.map((link) => (
                 <div className='navbar-item'>
                     <NavBarItem
-                    user={props}
+                   
                     key={link.id} 
                     name={link.name}
                     path={link.path}
