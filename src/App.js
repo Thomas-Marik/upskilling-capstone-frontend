@@ -1,13 +1,8 @@
 
 import React from 'react'
-import NavBar from './navigation/NavBar';
 import Navigation from './navigation/Navigation';
 import './App.css';
-import LoginNav from './navigation/navBar/LoginNav';
-import ManagerNav from './navigation/navBar/ManagerNav';
-import CustomerNav from './navigation/navBar/CustomerNav';
-import HomeScreen from './screens/HomeScreen';
-import {SideBar, MainContent, BrowserRouter, Routes, Route} from 'react-router-dom'
+
 
 const user=[{
 userName:"Sunracer",
@@ -75,29 +70,14 @@ account:[
 
 const App=()=> {
   return (
-    <BrowserRouter>
+    
        <div className='app'>
-      <div className='navbar'>
-      
-        <Routes>
-          <Route exact path="/" element={<LoginNav/>}/>
-          <Route exact path="/manager" element={<ManagerNav/>}/>
-          <Route exact path="/customer" element={<CustomerNav/>}/>
-        </Routes>
-      
-      </div>
-      <div className='content'>
     
-       <Routes>
-          <Route exact path="/" element={<HomeScreen/>}/>
-          <Route exact path="/manager" element={<HomeScreen/>}/>
-          <Route exact path="/customer" element={<HomeScreen/>}/>   
-       </Routes>
-
-    
+      <div className='content' >
+      <Navigation/>    
       </div>
     </div>
-    </BrowserRouter>
+ 
   )
 }
 

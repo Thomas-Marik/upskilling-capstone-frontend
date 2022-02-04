@@ -1,0 +1,41 @@
+.manager-container{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+   justify-content:space-evenly; 
+    border-radius: 25px;
+}
+.manager-header{
+    display: flex;    
+    justify-content: center;
+    border-radius: 12px;    
+    background-color: #fff;  
+    box-shadow: 1px 3px 15px 5px rgba(0,0,0,0.1);
+}
+.manager-title{
+    color:hsl(120, 60%, 22%);  
+}
+.manager-menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    justify-items: center;
+    padding: 100px 25px;
+    background-color: #fff;      
+    border-radius: 25px;
+    box-shadow: 1px 3px 15px 5px rgba(0,0,0,0.1);    
+}
+.manager-option{
+    background-color:hsl(120, 60%, 22%);
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;   
+    color: #fff;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
