@@ -2,6 +2,7 @@
 import React from 'react'
 import Navigation from './navigation/Navigation';
 import './App.css';
+import CreateCustomerScreen from './screens/CreateCustomerScreen';
 
 
 const user=[{
@@ -74,7 +75,8 @@ const App=()=> {
        <div className='app'>
     
       <div className='content' >
-      <Navigation/>    
+      {/* <Navigation/>     */}
+      <CreateCustomerScreen/>
       </div>
     </div>
  

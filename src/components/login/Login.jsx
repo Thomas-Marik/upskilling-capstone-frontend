@@ -23,6 +23,7 @@ const Login=()=> {
             <div className='login-box'>
   
                 <input
+                
                     type='text'
                     placeholder='Username'
                     className='login-input'
